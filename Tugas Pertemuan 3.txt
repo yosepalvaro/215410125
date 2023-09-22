@@ -1,0 +1,521 @@
+
+1.Membuka Kotlin Playground
+fun main() {
+    println("Hello, world!")
+}
+
+
+fun main () {
+println("Hello ,Android ")
+}
+
+fun main() {
+println("Hello, Android")
+println("Hello, Android")
+}
+
+
+fun main () {
+println("Today is sunny!")
+
+
+Latihan.
+fun main() {
+    println("1")
+    println("2")
+    println("3")
+}
+
+fun main() {
+    println("Tuesday")
+    println("Thursday")
+    println("Wednesday")
+    println("Friday")
+    println("Monday")
+}
+fun main() {
+    println("Tomorrow is rainy")
+
+
+fun main() {
+    println("I'm")
+    println("learning")
+    println("Kotlin!")
+}
+
+fun main() {
+    println("Monday")
+    println("Tuesday")
+    println("Wednesday")
+    println("Thursday")
+    println("Friday")
+}
+
+fun main() {
+    println("Tomorrow is rainy")
+}
+
+fun main() {
+    println("There is a chance of snow")
+}
+
+
+fun main() {
+    println("Cloudy")
+    println("Partly Cloudy")
+    println("Windy")
+}
+
+fun main() {
+    println("How's the weather today?")
+}
+
+2.Menampilkan dan memanggil fungsi 
+
+
+fun main() {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+
+fun main() {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+
+fun main() {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+
+fun birthdayGreeting() {
+
+}
+
+fun main() {
+
+}
+
+fun birthdayGreeting() {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+
+fun main() {
+    birthdayGreeting()
+}
+
+fun birthdayGreeting() {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+ Menampilkan Nilai Dari Fungsi 
+
+
+
+fun main() {
+    birthdayGreeting()
+}
+
+fun birthdayGreeting(): Unit {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+
+fun birthdayGreeting(): String {
+    println("Happy Birthday, Rover!")
+    println("You are now 5 years old!")
+}
+fun birthdayGreeting(): String {
+    val nameGreeting = "Happy Birthday, Rover!"
+    val ageGreeting = "You are now 5 years old!"
+}
+fun birthdayGreeting(): String {
+    val nameGreeting = "Happy Birthday, Rover!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+
+fun main() {
+    val greeting = birthdayGreeting()
+}
+fun main() {
+    val greeting = birthdayGreeting()
+    println(greeting)
+}
+fun main() {
+    println(birthdayGreeting())
+} 
+
+Menambahkan parameter ke fungsi birthday Greeting
+
+fun birthdayGreeting(name: String): String {
+    val nameGreeting = "Happy Birthday, Rover!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+
+fun birthdayGreeting(name: String): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+fun main() {
+    println(birthdayGreeting("Rover"))
+}
+
+println(birthdayGreeting("Rover"))
+println(birthdayGreeting("Rex"))
+
+
+Fungsi dengan beberapa parameter 
+
+
+fun birthdayGreeting(name: String, age: Int): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now 5 years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+
+fun birthdayGreeting(name: String, age: Int): String {
+    val nameGreeting = "Happy Birthday, $name!"
+    val ageGreeting = "You are now $age years old!"
+    return "$nameGreeting\n$ageGreeting"
+}
+
+fun main() {
+    println(birthdayGreeting("Rover", 5))
+    println(birthdayGreeting("Rex", 2))
+}
+
+fun birthdayGreeting(name: String, age: Int)
+Argumen yang dinamai 
+
+println(birthdayGreeting(name = "Rex", age = 2))
+
+
+
+Argumen default 
+
+fun birthdayGreeting(name: String = "Rover", age: Int): String {
+    return "Happy Birthday, $name! You are now $age years old!"
+}
+
+
+println(birthdayGreeting(age = 5))
+println(birthdayGreeting("Rex", 2))
+
+println(birthdayGreeting(age = 5))
+println(birthdayGreeting(age = 2))
+
+Memperbaiki Error kompilikasi 
+
+fun main() {
+    println("New chat message from a friend'}
+}
+
+Template String '
+
+fun main() {
+    val discountPercentage: Int = 0
+    val offer: String = ""
+    val item = "Google Chromecast"
+    discountPercentage = 20
+    offer = "Sale - Up to $discountPercentage% discount on $item! Hurry up!"
+
+    println(offer)
+}
+
+Penyambungan String /
+fun main() {
+    val numberOfAdults = "20"
+    val numberOfKids = "30"
+    val total = numberOfAdults + numberOfKids
+    println("The total party size is: $total")
+}
+
+
+Pemformatan pesan 
+
+fun main() {
+    val baseSalary = 5000
+    val bonusAmount = 1000
+    val totalSalary = "$baseSalary + $bonusAmount"
+    println("Congratulations for your bonus! You will receive a total of $totalSalary (additional bonus).")
+}
+
+Mengimplementasikan operasi matematika dasar 
+
+fun main() {
+    val firstNumber = 10
+    val secondNumber = 5
+
+    println("$firstNumber + $secondNumber = $result")
+}
+
+
+
+fun main() {
+    val firstNumber = 10
+    val secondNumber = 5
+    val thirdNumber = 8
+
+    val result = add(firstNumber, secondNumber)
+    val anotherResult = add(firstNumber, thirdNumber)
+
+    println("$firstNumber + $secondNumber = $result")
+    println("$firstNumber + $thirdNumber = $anotherResult")
+}
+
+// Define add() function below this line
+
+parameter default 
+
+fun main() {
+    val operatingSystem = "Chrome OS"
+    val emailId = "sample@gmail.com"
+
+    println(displayAlertMessage(operatingSystem, emailId))
+}
+
+// Define your displayAlertMessage() below this line.
+
+
+
+fun main() {
+    val operatingSystem = "Chrome OS"
+    val emailId = "sample@gmail.com"
+
+    println(displayAlertMessage(operatingSystem, emailId))
+}
+
+// Define your displayAlertMessage() below this line.
+
+
+
+fun main() {
+    val firstUserEmailId = "user_one@gmail.com"
+
+    // The following line of code assumes that you named your parameter as emailId.
+    // If you named it differently, feel free to update the name.
+    println(displayAlertMessage(emailId = firstUserEmailId))
+    println()
+
+    val secondUserOperatingSystem = "Windows"
+    val secondUserEmailId = "user_two@gmail.com"
+
+    println(displayAlertMessage(secondUserOperatingSystem, secondUserEmailId))
+    println()
+
+    val thirdUserOperatingSystem = "Mac OS"
+    val thirdUserEmailId = "user_three@gmail.com"
+
+    println(displayAlertMessage(thirdUserOperatingSystem, thirdUserEmailId))
+    println()
+}
+pedometer 
+
+
+fun main() {
+    val Steps = 4000
+    val caloriesBurned = PEDOMETERstepsTOcalories(Steps);
+    println("Walking $Steps steps burns $caloriesBurned calories")
+}
+
+fun PEDOMETERstepsTOcalories(NumberOFStepS: Int): Double {
+    val CaloriesBURNEDforEachStep = 0.04
+    val TotalCALORIESburned = NumberOFStepS * CaloriesBURNEDforEachStep
+    return TotalCALORIESburned
+}
+
+memindahkan kode duplikat ke fungsi 
+
+fun main() {
+    println("City: Ankara")
+    println("Low temperature: 27, High temperature: 31")
+    println("Chance of rain: 82%")
+    println()
+
+    println("City: Tokyo")
+    println("Low temperature: 32, High temperature: 36")
+    println("Chance of rain: 10%")
+    println()
+
+    println("City: Cape Town")
+    println("Low temperature: 59, High temperature: 64")
+    println("Chance of rain: 2%")
+    println()
+
+    println("City: Guatemala City")
+    println("Low temperature: 50, High temperature: 55")
+    println("Chance of rain: 7%")
+    println()
+}
+
+kode solusi 
+
+fun main() {
+    println("Use the val keyword when the value doesn't change.")
+    println("Use the var keyword when the value can change.")
+    println("When you define a function, you define the parameters that can be passed to it.")
+    println("When you call a function, you pass arguments for the parameters.")
+}
+
+
+fun main() {
+    println("New chat message from a friend")
+}
+
+fun main() {
+    val discountPercentage = 20
+    val item = "Google Chromecast"
+    val offer = "Sale  - Up to $discountPercentage% discount off $item! Hurry Up!"
+
+    println(offer)
+}
+
+
+fun main() {
+    val numberOfAdults = 20
+    val numberOfKids = 30
+    val total = numberOfAdults + numberOfKids
+    println("The total party size is: $total")
+}
+
+
+fun main() {
+    val firstNumber = 10
+    val secondNumber = 5
+
+    val result = firstNumber + secondNumber
+    println("$firstNumber + $secondNumber = $result")
+}
+
+
+fun add(firstNumber: Int, secondNumber: Int): Int {
+    return firstNumber + secondNumber
+}
+
+fun subtract(firstNumber: Int, secondNumber: Int): Int {
+    return firstNumber - secondNumber
+}
+
+
+fun main() {
+    val firstNumber = 10
+    val secondNumber = 5
+    val thirdNumber = 8
+
+    val result = add(firstNumber, secondNumber)
+    val anotherResult = subtract(firstNumber, thirdNumber)
+
+    println("$firstNumber + $secondNumber = $result")
+    println("$firstNumber - $thirdNumber = $anotherResult")
+}
+
+fun add(firstNumber: Int, secondNumber: Int): Int {
+    return firstNumber + secondNumber
+}
+
+fun subtract(firstNumber: Int, secondNumber: Int): Int {
+    return firstNumber - secondNumber
+}
+
+fun displayAlertMessage(operatingSystem: String, emailId: String): String {
+    return "There is a new sign-in request on $operatingSystem for your Google Account $emailId."
+}
+
+fun displayAlertMessage(
+    operatingSystem: String = "Unknown OS",
+    emailId: String
+): String {
+    return "There is a new sign-in request on $operatingSystem for your Google Account $emailId."
+}
+
+fun main() {
+    val steps = 4000
+    val caloriesBurned = pedometerStepsToCalories(steps);
+    println("Walking $steps steps burns $caloriesBurned calories")
+}
+
+fun pedometerStepsToCalories(numberOfSteps: Int): Double {
+    val caloriesBurnedForEachStep = 0.04
+    val totalCaloriesBurned = numberOfSteps * caloriesBurnedForEachStep
+    return totalCaloriesBurned
+}
+
+
+fun main() {
+    println("Have I spent more time using my phone today: ${compareTime(300, 250)}")
+    println("Have I spent more time using my phone today: ${compareTime(300, 300)}")
+    println("Have I spent more time using my phone today: ${compareTime(200, 220)}")
+}
+
+fun compareTime(timeSpentToday: Int, timeSpentYesterday: Int): Boolean {
+    return timeSpentToday > timeSpentYesterday
+}
+
+
+fun main() {
+    println("Have I spent more time using my phone today: ${compareTime(300, 250)}")
+    println("Have I spent more time using my phone today: ${compareTime(300, 300)}")
+    println("Have I spent more time using my phone today: ${compareTime(200, 220)}")
+}
+
+fun compareTime(timeSpentToday: Int, timeSpentYesterday: Int): Boolean {
+    return timeSpentToday > timeSpentYesterday
+}
+
+fun main() {
+    printWeatherForCity()
+}
+
+fun printWeatherForCity() {
+    println("City: Ankara")
+    println("Low temperature: 27, High temperature: 31")
+    println("Chance of rain: 82%")
+    println()
+}
+
+fun printWeatherForCity() {
+    println("City: $cityName")
+    println("Low temperature: $lowTemp, High temperature: $highTemp")
+    println("Chance of rain: $chanceOfRain%")
+    println()
+}
+
+fun printWeatherForCity(cityName: String, lowTemp: Int, highTemp: Int, chanceOfRain: Int) {
+    println("City: $cityName")
+    println("Low temperature: $lowTemp, High temperature: $highTemp")
+    println("Chance of rain: $chanceOfRain%")
+    println()
+}
+
+
+fun main() {
+    printWeatherForCity("Ankara", 27, 31, 82)
+}
+
+fun printWeatherForCity(cityName: String, lowTemp: Int, highTemp: Int, chanceOfRain: Int) {
+    println("City: $cityName")
+    println("Low temperature: $lowTemp, High temperature: $highTemp")
+    println("Chance of rain: $chanceOfRain%")
+    println()
+}
+
+
+
+
+fun main() {
+    printWeatherForCity("Ankara", 27, 31, 82)
+    printWeatherForCity("Tokyo", 32, 36, 10)
+    printWeatherForCity("Cape Town", 59, 64, 2)
+    printWeatherForCity("Guatemala City", 50, 55, 7)
+}
+
+fun printWeatherForCity(cityName: String, lowTemp: Int, highTemp: Int, chanceOfRain: Int) {
+    println("City: $cityName")
+    println("Low temperature: $lowTemp, High temperature: $highTemp")
+    println("Chance of rain: $chanceOfRain%")
+    println()
+}
